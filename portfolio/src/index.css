@@ -11,20 +11,21 @@ body{
   color: white;
 }
 * {
-  font-family: "Playwrite DK Loopet", cursive;
+  font-family: "Alegreya", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 .heading-box{
      animation: animate 1s ease-in-out infinite alternate;
+     
 }
 @keyframes animate{
   from{
-    text-shadow: 0 0 10px #f3dce5;
+    text-shadow: 0 0 40px #C2185B	;
   }
   to{
-    text-shadow: 0 0 30px #f3dce5,
-                0 0 10px #f3dce5;
+    text-shadow: 0 0 90px#C2185B	,
+                0 0 50px#C2185B;
   }
 }
