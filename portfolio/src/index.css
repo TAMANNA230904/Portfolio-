@@ -17,15 +17,16 @@ body{
   font-style: normal;
 }
 .heading-box{
-     animation: animate 1s ease-in-out infinite alternate;
+    text-shadow: 5px 0 0 #C2185B,-5px 0 0 #C2185B;
+    animation: animate 1s ease-in-out infinite alternate;
      
 }
 @keyframes animate{
   from{
-    text-shadow: 0 0 40px #C2185B	;
+    text-shadow: 0 0 10px #C2185B	;
   }
   to{
-    text-shadow: 0 0 90px#C2185B	,
-                0 0 50px#C2185B;
+    text-shadow:0 0 40px #C2185B	,
+               0 0  30px #C2185B;
   }
 }
