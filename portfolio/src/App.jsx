@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import image from './image.png';
+import Contact from './Contact';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,8 +9,8 @@ function App() {
   return (
     <>
      <div className="heading-box">
-      <div className="text-white text-shadow-md font-bold text-5xl pb-5">WELCOME TO MY PORTFOLIO WEBSITE !!</div>
-      <div className="text-white font-bold text-3xl mb-10">I am Tamanna Sheikh</div>
+      <div className="text-yellow-500 text-shadow-md font-bold text-5xl pb-5">WELCOME TO MY PORTFOLIO WEBSITE !!</div>
+      <div className="text-blue-300 font-bold text-3xl mb-10">I am Tamanna Sheikh</div>
      </div>
 
      <div className="grid grid-cols-2 gap-4">
@@ -21,9 +22,8 @@ function App() {
       Skils included in my tech stack are C++,HTML,CSS,React,Javascript,SQL.I always try to learn new things and adaptive to new technologies.
       My greatest strenghts are my perseverance and sense of righteousness.I love singing and have been learning to play guitar these days.
      </p>
-     
-
      </div>
+     <Contact/>
     </>
   )
 }
