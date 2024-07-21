@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import image from './image.png';
 import Contact from './Contact';
-
+import Skills from './Skills';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +23,7 @@ function App() {
       My greatest strenghts are my perseverance and sense of righteousness.I love singing and have been learning to play guitar these days.
      </p>
      </div>
+     <Skills/>
      <Contact/>
     </>
   )

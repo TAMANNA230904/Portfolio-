@@ -23,7 +23,7 @@ const Contact=()=> {
    
     <div className='grid grid-cols-2 gap-4 m-9 justify-items-center  items-center'>
     <h1 className='font-bold text-4xl'>Connect With Me!</h1>
-    <form onSubmit={handleSubmit} className='flex-col '>
+    <form onSubmit={handleSubmit} className='flex-col'>
         <div className='m-4 p-2'>
             <label for='name' className='p-2 m-1 block text=gray-700'>Your Name:</label>
             <input className='text-gray-700' type="text" id='name' name='name' value={FormData.name} onChange={handleChange} />
