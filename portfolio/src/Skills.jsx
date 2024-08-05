@@ -64,7 +64,7 @@ const Skills=()=>{
    </div>
    </div>
  {/* Profiles section */}
-    
+        <div className='grid grid-cols-2 gap-5'>
         <a href="https://leetcode.com/u/tamannasheikh2304/">
         <img className="w-12 h-12 rounded-3xl"src="https://user-images.githubusercontent.com/36547915/97088991-45da5d00-1652-11eb-900f-80d106540f4f.png" alt="leetcode" />
         </a>
@@ -73,8 +73,8 @@ const Skills=()=>{
         <img className="w-12 h-12 rounded-3xl"src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png" alt="leetcode" />
         </a>
 
-        <button onClick={onButtonClick} className="">Resume</button>
-    
+        <button onClick={onButtonClick} className="col-span-2 bg-indigo-600 text-white p-1.5 pr-1 pl-1 rounded-lg">Resume</button>
+        </div>
    </div>
     )
 };
