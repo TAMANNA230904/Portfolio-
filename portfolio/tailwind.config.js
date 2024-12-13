@@ -6,7 +6,11 @@ export default {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'dancing-script': ['"Dancing Script"', 'cursive'],
+    },
+    },
   },
   plugins: [],
 }

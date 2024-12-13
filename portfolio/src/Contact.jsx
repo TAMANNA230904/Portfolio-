@@ -1,46 +1,85 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
 
-
-const Contact=()=> {
- 
-  const [FormData,setFormData]=useState({
-    name:'',
-    email:'',
-    message:''
-  });
-  const handleChange=(e)=>{
-    const{name,value}=e.target;
-    setFormData((prevState)=>({
-        ...prevState,
-        [name]:value
-    }))};
-  const handleSubmit=(e)=>{
-   e.preventDefault()
-   console.log('Form Submitted Successfully')
-  };
+const Contact = () => {
   return (
-   
-    <div className='grid grid-cols-2 gap-4 m-9 justify-items-center  items-center'>
-    <h1 className='font-bold text-4xl'>Connect With Me!</h1>
-    <form onSubmit={handleSubmit} className='flex-col'>
-        <div className='m-4 p-2'>
-            <label for='name' className='p-2 m-1 block text=gray-700'>Your Name:</label>
-            <input className='text-gray-700' type="text" id='name' name='name' value={FormData.name} onChange={handleChange} />
-        </div>
-        <div  className='m-4 p-2'>
-            <label for='email'  className='p-2 m-1 block text=gray-700'>Your Email:</label>
-            <input className='text-gray-700' type="text" id='email' name='email' value={FormData.email} onChange={handleChange} />
-        </div>
-        <div  className='m-4 p-2'>
-            <label for='message'  className='p-2 m-1 block text=gray-700'>Message:</label>
-            <input className='text-gray-700' type="text" id='message' name='message' value={FormData.message} onChange={handleChange}/>
+    <div className="flex flex-col justify-start h-screen p-4 items-center">
+      <h1 className="font-bold text-7xl mb-8">Know Me Better! 🚀</h1>
+      <p className="font-bold text-2xl text-white">I have been solving DSA questions on Leetcode and GeeksForGeeks. </p>
+       <p className="font-bold text-2xl text-white"> I have added the projects I have completed on Github. </p> 
+       <p className="font-bold text-2xl text-white ">Connect with me on LinkedIn</p>
+      <div className="space-x-10  flex">
+        {/* LinkedIn */}
+        <div className="flex items-center space-x-4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn Logo"
+            className="w-10 h-10"
+          />
+          <a
+            href="https://www.linkedin.com/in/tamanna-sheikh-66bba2276/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 text-2xl font-semibold"
+          >
+            LinkedIn
+          </a>
         </div>
 
-        <button type='submit' className='bg-blue-500 border-2 rounded-lg'>Submit</button>
-    </form>
+        {/* GitHub */}
+        <div className="flex items-center space-x-4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+            alt="GitHub Logo"
+            className="w-10 h-10"
+          />
+          <a
+            href="https://github.com/TAMANNA230904"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-700 text-2xl font-semibold"
+          >
+            GitHub
+          </a>
+        </div>
+
+        {/* GeeksforGeeks */}
+        <div className="flex items-center space-x-4">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg"
+            alt="GeeksforGeeks Logo"
+            className="w-10 h-10"
+          />
+          <a
+            href="https://www.geeksforgeeks.org/user/tamannashi5kn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 hover:text-green-800 text-2xl font-semibold"
+          >
+            GeeksforGeeks
+          </a>
+        </div>
+
+        {/* LeetCode */}
+        <div className="flex items-center space-x-4">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+            alt="LeetCode Logo"
+            className="w-10 h-10"
+          />
+          <a
+            href="https://leetcode.com/u/tamannasheikh2304/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-yellow-600 hover:text-yellow-800 text-2xl font-semibold"
+          >
+            LeetCode
+          </a>
+        </div>
+        
+
+      </div>
     </div>
-  )
+  );
 };
 
 export default Contact;

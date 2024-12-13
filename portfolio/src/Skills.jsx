@@ -13,69 +13,29 @@ const Skills=()=>{
     };
 
     return (
-   <div className="flex">
-   {/* Technical Skills with bar */}
-   <div className="flex-row m-9  justify-items-center  items-center w-2/3">
-    <h3 className="mb-7 p-0 font-bold text-4xl  ">Technical Skills</h3>
-    <div className=" grid grid-cols-2 gap-4  w-1/2">
-
-   <div className="">
-    <div className="text-white-700 m-1">C++</div>
-    <div className="h-3 w-40 relative bg-neutral-500 rounded-lg">
-        <div className=" absolute left-0 h-3 w-4/5 bg-red-400 rounded-lg "></div>
-    </div>
-   </div>
-
-
-   <div className="">
-    <div className="text-white-700 m-1">HTML</div>
-    <div className="h-3 w-40 relative bg-neutral-500 rounded-lg">
-        <div className=" absolute left-0 h-3 w-4/5 bg-red-400 rounded-lg "></div>
-    </div>
-   </div>
-
-    <div className="">
-    <div className="text-white-700 m-1">CSS</div>
-    <div className="h-3 w-40 relative bg-neutral-500 rounded-lg">
-        <div className=" absolute left-0 h-3 w-3/5 bg-red-400 rounded-lg "></div>
-    </div>
-   </div>
-
-   <div className="">
-    <div className="text-white-700 m-1">Python</div>
-    <div className="h-3 w-40 relative bg-neutral-500 rounded-lg">
-        <div className=" absolute left-0 h-3 w-3/5 bg-red-400 rounded-lg "></div>
-    </div>
-   </div>
-
-   <div className="">
-    <div className="text-white-700 m-1">SQL</div>
-    <div className="h-3 w-40 relative bg-neutral-500 rounded-lg">
-        <div className=" absolute left-0 h-3 w-4/5 bg-red-400 rounded-lg "></div>
-    </div>
-   </div>
-
-   <div className="">
-    <div className="text-white-700 m-1">Javascript</div>
-    <div className="h-3 w-40 relative bg-neutral-500 rounded-lg">
-        <div className=" absolute left-0 h-3 w-2/5 bg-red-400 rounded-lg "></div>
-    </div>
-   </div>
-   </div>
-   </div>
- {/* Profiles section */}
-        <div className='grid grid-cols-2 gap-5'>
-        <a href="https://leetcode.com/u/tamannasheikh2304/">
-        <img className="w-12 h-12 rounded-3xl"src="https://user-images.githubusercontent.com/36547915/97088991-45da5d00-1652-11eb-900f-80d106540f4f.png" alt="leetcode" />
-        </a>
-
-        <a href="https://www.geeksforgeeks.org/user/tamannashi5kn/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">
-        <img className="w-12 h-12 rounded-3xl"src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png" alt="leetcode" />
-        </a>
-
-        <button onClick={onButtonClick} className="col-span-2 bg-indigo-600 text-white p-1.5 pr-1 pl-1 rounded-lg">Resume</button>
+        <div className="flex flex-col rounded-md items-center">
+        {/* Technical Skills Heading */}
+        <h3 className="font-bold text-5xl text-indigo-700">Technical Skills</h3>
+      
+        {/* Technical Skills Section */}
+        <div className="w-full px-16">
+          <div className="text-pink-600 text-2xl font-dancing-script self-start">C++</div>
+          <div className="text-purple-600 text-2xl font-dancing-script self-end">HTML</div>
+          <div className="text-teal-600 text-2xl font-dancing-script self-start">CSS</div>
+          <div className="text-blue-600 text-2xl font-dancing-script self-end">Python</div>
+          <div className="text-green-600 text-2xl font-dancing-script self-start">SQL</div>
+          <div className="text-orange-600 text-2xl font-dancing-script self-end">JavaScript</div>
         </div>
-   </div>
+      
+        {/* Profiles Section */}
+        <div className='grid grid-cols-2 gap-5'>
+          <button 
+            onClick={onButtonClick} 
+            className="col-span-2 bg-indigo-600 text-white p-1.5 rounded-lg hover:bg-indigo-700">
+            Resume
+          </button>
+        </div>
+      </div>    
     )
 };
 
