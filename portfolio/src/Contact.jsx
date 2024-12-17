@@ -4,9 +4,16 @@ const Contact = () => {
   return (
     <div className="flex flex-col justify-start h-screen p-4 items-center">
       <h1 className="font-bold text-7xl mb-8">Know Me Better! 🚀</h1>
-      <p className="font-bold text-2xl text-white">I have been solving DSA questions on Leetcode and GeeksForGeeks. </p>
-       <p className="font-bold text-2xl text-white"> I have added the projects I have completed on Github. </p> 
-       <p className="font-bold text-2xl text-white ">Connect with me on LinkedIn</p>
+       <p className="font-bold text-2xl text-white">I have been solving DSA questions on Leetcode and GeeksForGeeks. </p>
+       <p className="font-bold text-2xl text-white"> I have added the projects on my Github Account. </p> 
+       <p className="font-bold text-2xl text-white ">Connect with me on LinkedIn.</p>
+
+         <img 
+          src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" 
+          alt="Travel Animation" 
+          className="w-96 rounded-lg shadow-md" 
+        />
+
       <div className="space-x-10  flex">
         {/* LinkedIn */}
         <div className="flex items-center space-x-4">

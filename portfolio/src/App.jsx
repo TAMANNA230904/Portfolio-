@@ -4,7 +4,6 @@ import './App.css'
 import image from './image.png';
 import Contact from './Contact.jsx';
 import Skills from './Skills.jsx';
-import Skills2 from './Skills2.jsx';
 import Project from './Projects.jsx';
 function App() {
 
@@ -12,29 +11,21 @@ function App() {
     <Router>
      <div className="flex h-screen bg-black-300">
         {/* Side Navigation Bar */}
-        <nav className=" h-screen text-white flex flex-col items-start justify-strecth place-items-start bg-gray-800 p-4">
+        <nav className=" h-screen text-white flex flex-col font-dancing-script items-center justify-center place-items-start p-4">
         
           <ul className="flex flex-col gap-10 ">
             <li>
               <Link
                 to="/"
-                className="hover:bg-gray-700  rounded transition bg-gray-400 text-5xl items-start"
+                className="hover:bg-gray-700  rounded transition  text-5xl items-start"
               >
                 Home
               </Link>
             </li>
             <li>
               <Link
-                to="/skills"
-                className="hover:bg-gray-700  rounded transition bg-gray-400 text-5xl"
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/contact"
-                className="hover:bg-gray-700  rounded transition bg-gray-400 text-5xl"
+                className="hover:bg-gray-700  rounded transition  text-5xl"
               >
                 Contact
               </Link>
@@ -42,17 +33,17 @@ function App() {
 
             <li>
               <Link
-                to="/skills2"
-                className="hover:bg-gray-700  rounded transition bg-gray-400 text-5xl items-start"
+                to="/skills"
+                className="hover:bg-gray-700  rounded transition  text-5xl items-start"
               >
-                Skills2
+                Skills
               </Link>
             </li>
 
             <li>
               <Link
                 to="/projects"
-                className="hover:bg-gray-700  rounded transition bg-gray-400 text-5xl items-start"
+                className="hover:bg-gray-700  rounded transition  text-5xl items-start"
               >
                 Projects
               </Link>
@@ -67,16 +58,16 @@ function App() {
               element={
                 <>
                   <div className="heading-box rounded-md p-4">
-                    <div className="text-white-900 font-bold text-5xl pb-3">
-                      HELLO GUYS, HOPE YOU ARE DOING WELL !!
+                    
+                    <div className="text-white-900 font-bold text-6xl mb-6">
+                      Hey, I am Tamannaah 👋
                     </div>
-                    <div className="text-white-900 font-bold text-3xl mb-6">
-                      I am Tamannaah
-                    </div>
+                   
+
                   </div>
 
-                  <div className="grid grid-cols-3 gap-4 items-start rounded-md p-4">
-                    <p className="text-xl leading-relaxed border-2 border-pink-700 p-2 col-span-2 rounded-lg ">
+                  <div className="flex items-start gap-4 p-4">
+                    <p className="text-2xl leading-relaxed border-2 border-blue-800 shadow-lg shadow-blue-800 p-2 flex-1 rounded-lg">
                       I am pursuing my B.Tech in AI/ML. I
                       completed my schooling from Carmel Convent School.
                       Throughout my academic career,I consistently achieved
@@ -91,7 +82,7 @@ function App() {
                       to the simpler times when we used to write in notebooks, offering a refreshing break from this fast-paced digital world. 
                     </p>
                     <img
-                      className="w-48 h-55 object-cover rounded-lg"
+                      className="w-1/3 h-[448.2px] object-cover rounded-lg"
                       src={image}
                       alt="Tammy"
                     />
@@ -99,9 +90,9 @@ function App() {
                   </>
   }
             />
-            <Route path="/skills" element={<Skills/>} />
+            
             <Route path="/contact" element={<Contact/>} />
-            <Route path="/skills2" element={<Skills2/>} />
+            <Route path="/skills" element={<Skills/>} />
             <Route path="/projects" element={<Project/>} />
           </Routes>
         </div>
